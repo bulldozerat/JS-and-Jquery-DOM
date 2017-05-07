@@ -1,0 +1,15 @@
+.scrollTop{
+    position: fixed;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: #AF8D2D;
+    padding: 10px 10px 5px 10px;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 27px 27px 0 0;
+    right: 30px;
+    bottom:5px;
+}
