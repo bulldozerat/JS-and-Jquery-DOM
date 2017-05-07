@@ -1,0 +1,70 @@
+body {
+    background: #0E1013;
+}
+
+.container {
+    width: 200px;
+    height: 100px;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    margin: 20px auto;
+    border-radius: 50px;
+}
+/*Animations*/
+.container {
+    position: relative;
+    transition: all 1s;
+}
+
+.container div:nth-child(1) {
+    background: #ff005d;
+    animation: moveX 1.05s linear 0s infinite alternate;
+    position: relative;
+}
+
+.container div:nth-child(2) {
+    background: #35ff99;
+    animation: moveX 1.55s linear 0s infinite alternate;
+    position: relative;
+}
+
+.container div:nth-child(3) {
+    background: #008597;
+    animation: moveX 1.85s linear 0s infinite alternate;
+    position: relative;
+}
+
+.container div:nth-child(4) {
+    background: #ffcc00;
+    animation: moveX 0.85s linear 0s infinite alternate;
+    position: relative;
+}
+
+.container div:nth-child(5) {
+    background: #2d3443;
+    animation: moveX 0.55s linear 0s infinite alternate;
+    position: relative;
+}
+
+.container div:nth-child(6) {
+    background: #ff7c35;
+    animation: moveX 2.85s linear 0s infinite alternate;
+    position: relative;
+}
+
+.container div:nth-child() {
+    background: #4d407c;
+    animation: moveX 1.15s linear 0s infinite alternate;
+    position: relative;
+}
+
+
+/*@keyframes*/
+@keyframes moveX {
+    from { left: -80px; } to { left: 80px; }
+}
