@@ -1,0 +1,72 @@
+<!--
+Write a JS program that implements a web timer that supports minutes and seconds. The user should be able to
+control it with buttons. Only one of the buttons should be enabled at a time (you cannot stop the timer if it’s not running).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js.js"></script>
+</head>
+<div id="time" style="border:3px solid blue; text-align:center; font-size:2em; margin-bottom:10px">00:00</div>
+
+<button id="startBtn">Start</button>
+
+<button id="stopBtn" disabled="true">Stop</button>
+
+<script>
+    window.onload = function () {
+        let startBtn = document.getElementById('startBtn');
+        startBtn.addEventListener('click', startwatch);
+
+        let stopBtn = document.getElementById('stopBtn');
+        stopBtn.addEventListener('click', stopwatch);
+
+        let passedTime = 0;
+        let test = false;
+        let interval;
+
+        function startwatch() {
+            stopBtn.disabled = false;
+            startBtn.disabled = true;
+            let mins = Math.floor(passedTime / 60);
+            let secs = passedTime % 60;
+
+            if (mins < 10) {
+                mins = '0' + mins;
+            }
+
+            if (secs < 10) {
+                secs = '0' + secs;
+            }
+
+            let time = document.querySelector('#time');
+            time.innerHTML = mins + ':' + secs;
+            passedTime++;
+
+            if (test === false) {
+                start();
+            }
+            test = true;
+        }
+
+        function stopwatch() {
+            stopBtn.disabled = true;
+            startBtn.disabled = false;
+            test = false;
+            stop();
+        }
+
+        function start() {
+            interval = setInterval(startwatch, 1000);
+        }
+
+        function stop() {
+            clearInterval(interval);
+        }
+    }
+</script>
+</body>
+</html>
