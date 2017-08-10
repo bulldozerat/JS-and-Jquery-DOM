@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+<h1>List of Items</h1>
+
+<ul id="items">
+    <li>First</li>
+    <li>Second</li>
+</ul>
+
+<input type="text" id="newItemText"/>
+
+<input type="button" value="Add" onclick="addItem()">
+
+<script>
+    function addItem() {
+        let inputVal = document.getElementById('newItemText');
+        let textNode = document.createTextNode(inputVal.value);
+        let li = document.createElement('li');
+        li.appendChild(textNode);
+
+        let textNodeA = document.createTextNode('[DELETE]');
+        let a = document.createElement('a');
+        a.appendChild(textNodeA);
+        li.appendChild(a);
+
+        let ul = document.querySelector('ul');
+        ul.appendChild(li);
+
+        a.style.color = 'purple';
+        a.style.cursor = 'pointer';
+        a.addEventListener('click', deleteItem);
+        inputVal.value = '';
+
+        function deleteItem() {
+            $(this).parent().css({display: 'none'});
+        }
+    }
+</script>
+</body>
+</html>
