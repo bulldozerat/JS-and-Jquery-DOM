@@ -1,0 +1,40 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  margin: 10px auto;
+  text-align: center;
+
+  .display-ib {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .result {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 18px;
+
+    .pokemon-wrapper{
+      background: gray;
+      padding: 10px;
+      text-align: center;
+      margin: 10px 0;
+
+      h1 {
+        margin: 0;
+      }
+
+      .inner-pokemon-wrapper {
+        margin: 10px 0;
+        display: none;
+      }
+    }
+  }
+}
