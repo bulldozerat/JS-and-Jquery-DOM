@@ -1,0 +1,188 @@
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url('../imgs/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.last {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+/*=========================Car image section=========================*/
+.car-section {
+  max-width: 960px;
+  width: 90%;
+  height: 450px;
+  background: url('../imgs/Crtv_desktop.jpg') no-repeat center center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tooltip-btn-wrapper {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#btn-tooltip-wrapper {
+  display: none;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.tooltip-btn-wrapper .btn-tooltip {
+  width: 160px;
+  height: 95px;
+  padding: 15px 27px;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  background: rgba(72, 72, 72, 0.9);
+}
+
+.tooltip-btn-wrapper .html-btn {
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding: 5px 33px;
+  background: linear-gradient(to bottom, #fcfcfc, #f7f7f7);
+  color: #2e2b24;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 1px 1px 3px #b5b5b5;
+  -moz-box-shadow: 1px 1px 3px #b5b5b5;
+  box-shadow: 1px 1px 3px #b5b5b5;
+}
+/*=========================Form section=========================*/
+.form-section {
+  max-width: 960px;
+  width: 90%;
+  height: 176px;
+  margin: 0 auto 40px;
+  background: #fff;
+  border-top: 12px dashed #f8bb49;
+  border-bottom: 12px dashed #f8bb49;
+  -webkit-box-shadow: 0 5px 5px #b5b5b5;
+  -moz-box-shadow: 0 5px 5px #b5b5b5;
+  box-shadow: 0 5px 5px #b5b5b5;
+}
+
+.info-form {
+  background: #484848;
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px 20px 30px;
+}
+
+.form-box-wrapper {
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  margin-right: 3%;
+  vertical-align: top;
+  position: relative;
+}
+
+.submit-btn {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: bold;
+  width: 195px;
+  height: 55px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #cf7200;
+  color: #484848;
+  background: linear-gradient(to bottom, #f8be52, #f79928);
+  cursor: pointer;
+}
+
+.btn-arrow-img {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+.submit-box {
+  position: relative;
+}
+
+.submit-btn img {
+  float: left;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+
+.terms-txt {
+  font-size: 13px;
+  color: #e8e8e8;
+}
+
+.terms-txt span {
+  text-decoration: underline;
+}
+
+.form-box-wrapper .input {
+  width: 85%;
+  height: 43px;
+  background: #e8e8e8;
+  padding-left: 15px;
+  -webkit-box-shadow:inset 2px 2px 5px 0 rgba(0,0,0,.3);
+  -moz-box-shadow:inset 2px 2px 5px 0 rgba(0,0,0,.3);
+  box-shadow:inset 2px 2px 5px 0 rgba(0,0,0,.3);
+}
+
+.form-box-wrapper .input::placeholder,
+.form-box-wrapper select {
+  color: #484848;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.icon-wrapper {
+  width: 40px;
+  display: inline-block;
+}
+
+.icon-wrapper img {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.terms-wrapper {
+  margin-top: 27px;
+}
+
+.terms-wrapper input[type='checkbox'] {
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+/*for older versions of older browsers to center the text. I have mozilla 16 thats why i saw it*/
+select {
+  padding: 10px 0;
+}

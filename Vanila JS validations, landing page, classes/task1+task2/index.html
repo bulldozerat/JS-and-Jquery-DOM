@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Naxex task</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css\media.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class='wrapper'>
+    <section class='car-section'>
+      <div class="car-img">
+        <div class="tooltip-btn-wrapper">
+          <div id="btn-tooltip-wrapper">
+            <div class="btn-tooltip">The popup windows opens on mouseover</div>
+            <img src="imgs/tooltip-arrow.png" alt="">
+          </div>
+          <button class="html-btn">HTML button</button>
+        </div>
+      </div>
+    </section>
+
+    <section class='form-section'>
+      <form action="" class='info-form'>
+
+        <div class="form-box-wrapper">
+          <div class='input-wrapper'>
+            <div class="icon-wrapper">
+              <img src="imgs/user.png" alt="User" style='margin-left:8px;'>
+            </div>
+            <input type="text" placeholder="Full Name" class='input' id='fNameInput'>
+          </div>
+
+          <div class='input-wrapper'>
+            <div class="icon-wrapper">
+              <img src="imgs/envelope.png" alt="Envelope">
+            </div>
+            <input type="email" placeholder="Email" class='input' id='emailInput'>
+          </div>
+        </div>
+
+        <div class="form-box-wrapper">
+          <div class='input-wrapper'>
+            <div class="icon-wrapper">
+              <img src="imgs/phone.png" alt="Phone">
+            </div>
+            <input type="number" placeholder="+000" class='input' id='countryPrefix' style="width:75px;margin-right:6px;">
+            <input type="number" placeholder="Phone Number" class='input' id='phoneNumberInput' style="width:169px;">
+          </div>
+
+          <div class='input-wrapper'>
+            <div class="icon-wrapper">
+              <img src="imgs/globe.png" alt="Globe">
+            </div>
+            <select class='input' id='countrySelect'>
+              <option selected="selected" disabled='disabled'>Country</option>
+              <option value='bg' data-prefix='359'>Bulgaria</option>
+              <option value='en' data-prefix='44'>England</option>
+              <option value='fr' data-prefix='33'>France</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-box-wrapper last" style="width:27%;">
+          <div class="submit-box">
+            <img src="imgs/arrow-right.png" alt="Right arrow" class="btn-arrow-img">
+            <button type="submit" class='submit-btn'>Send</button>
+
+            <div class="terms-wrapper">
+              <input type="checkbox" id='termsCheckbox'> <span class='terms-txt'>I agree with the <span>Terms & Conditions</span></span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="js/showHideTooltipBox.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/validationFunctions.js"></script>
+  <script src="js/prefixChangeFromOption.js"></script>
+</body>
+
+</html>

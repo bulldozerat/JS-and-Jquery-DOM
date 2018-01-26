@@ -1,0 +1,119 @@
+@media (max-width: 1210px) {
+  .form-box-wrapper {
+    width: 46%;
+  }
+
+  .form-section {
+    height: auto;
+  }
+
+  #phoneNumberInput {
+    width: 66% !important;
+  }
+
+  .form-box-wrapper .input {
+    width: 87%;
+  }
+
+  #countryPrefix {
+    width: 19% !important;
+  }
+
+  .info-form .form-box-wrapper:last-child {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .submit-box {
+    width: 350px;
+    margin: 10px auto 0;
+  }
+
+  .submit-box button {
+    width: 100%;
+  }
+
+  /*checkbox size for firefox doesnt work. Maybe there is fix but i dont think its so important for
+  this task*/
+  .submit-box input[type='checkbox'] {
+    width: 23px;
+    height: 23px;
+    vertical-align: sub;
+  }
+
+  .terms-txt {
+    font-size: 18px;
+  }
+
+  .terms-wrapper {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  .form-box-wrapper {
+    width: 100%;
+  }
+
+  .html-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .car-img {
+    background: url('../imgs/Creative_mobile.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-section {
+    border-bottom: none;
+    border-top: 10px solid #f8b549;
+  }
+
+  .form-box-wrapper .input {
+    height: 60px;
+    font-size: 22px;
+  }
+
+  #countryPrefix {
+    width: 23% !important;
+  }
+
+  #phoneNumberInput {
+    width: 61% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-box-wrapper .input {
+    width: 80%;
+  }
+
+  #countryPrefix {
+    width: 25%!important;
+  }
+
+  #phoneNumberInput {
+    width: 52% !important;
+  }
+
+  .submit-box {
+    width: 100%;
+  }
+
+  .terms-txt {
+    font-size: 14px;
+  }
+
+  .submit-box input[type='checkbox'] {
+    vertical-align: middle;
+  }
+}
