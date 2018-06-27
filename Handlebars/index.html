@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="js.js"></script>
+</head>
+
+<body>
+
+    <ul id="test"></ul>
+    <script id="character-template" type="text/x-handlebars-template">
+        {{#each characters}}
+        <li class="character">
+            <p>{{#if name}} name: {{name}} {{else if test}} name: {{test}} {{else}} name: nqma go {{/if}}</p>
+            <p class="age">Age: {{age}}</p>
+            {{#with house}}
+            {{#makeBold}}
+            <p>House clan: {{clan}}</p>
+            {{/makeBold}}
+            <p>House city: {{city}}</p>
+            <p>From house age: {{../age}}</p>
+            {{/with}}
+            <p>test {{test name}}</p>
+        </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>

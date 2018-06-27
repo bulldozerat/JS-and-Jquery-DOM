@@ -1,0 +1,36 @@
+{
+    "characters": [
+        {
+            "name": "John",
+            "age": 22,
+            "house": {
+             "clan": "Stark",
+             "city": "Witerfall"
+            }
+        },
+        {
+            "name": "Robert",
+            "age": 32,
+            "house": {
+                "clan": "Barateon",
+                "city": "Center"
+            }
+        },
+        {
+            "name": "Test",
+            "age": 42,
+            "house": {
+                "clan": "Stark",
+                "city": "Witerfall"
+            }
+        },
+        {
+            "name": "Hunt",
+            "age": 22,
+            "house": {
+                "clan": "Hubt",
+                "city": "Center"
+            }
+        }
+    ]
+}
